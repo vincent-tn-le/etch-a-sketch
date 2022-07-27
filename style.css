@@ -1,8 +1,15 @@
 .grid-container {
     display: grid;
-    grid-template-columns: ;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
 }
 
 .grid {
-
+    display: flex;
+    
 }

@@ -8,13 +8,15 @@ function createGrid(n) {
         for (let j = 1; j <= n; j++) {
             var newDiv = document.createElement("div");
             newDiv.setAttribute('style', 'border: 1px solid black;');
-            newDiv.style.gridTemplateColumns = `${i} ${i+1};`;
-            newDiv.style.gridTemplateRows = `${j} ${j+1};`;
-            newDiv.textContent = `grid ${i} ${j}`;
+            newDiv.style.width = '10px';
+            newDiv.style.height = '10px';
+            newDiv.style.margin = '1px';
             newDiv.className = `grid ${i} ${j}`;
             container.appendChild(newDiv);
         }
     }
+    container.style.gridTemplateColumns = `repeat(${n}, minmax(0,1fr))`;
+    container.style.gridTemplateRows = `repeat(${n}, minmax(0,1fr))`;
 };
 
-createGrid(16);
+createGrid(50);
