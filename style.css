@@ -1,10 +1,17 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
 .grid-container {
     display: grid;
 }
 
-body {
+.button-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
+    justify-content: space-between;
+    
 }
