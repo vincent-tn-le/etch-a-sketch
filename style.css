@@ -1,26 +1,16 @@
-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
+button {
+    background-color: white;
+    border: 1px solid;
+    padding: 10px 35px;
+    font-size: 12px;
+    white-space: nowrap;
+    margin: 15px 10px 15px 10px;
 
     font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
     text-transform: uppercase;
     letter-spacing: 2px;
     border-radius: 300px;
 }
-
-.grid-container {
-    display: grid;
-}
-
-.button-container {
-    display: flex;
-    justify-content: space-between;
-    
-}
-
 button:hover{
     color: #0056b3;
 }
